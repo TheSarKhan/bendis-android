@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/homeicon"
+        android:title="Ana səhifə" />
+    <item
+        android:id="@+id/favoriteFragment"
+        android:icon="@drawable/favoriteicon"
+        android:title="Sevimlilər" />
+    <item
+        android:id="@+id/basketFragment"
+        android:icon="@drawable/carticon"
+        android:title="Səbət" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/profileicon"
+        android:title="Profil" />
+</menu>

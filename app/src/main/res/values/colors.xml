@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    // Bendis colors
+    <color name="main_color">#FFC700</color>
+    <color name="text_color">#2C2C2C</color>
+    <color name="text_hint_color">#888888</color>
 </resources>
