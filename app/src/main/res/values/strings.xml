@@ -2,4 +2,13 @@
     <string name="app_name">Bendis</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="BendisTitle">Bendis</string>
+    <string name="DaxilOl">Daxil olun</string>
+    <string name="email">E-Mail</string>
+    <string name="Password">Şifrə</string>
+    <string name="ForgotPass">Şifrəmi unutdum</string>
+    <string name="Login">Daxil ol</string>
+    <string name="Or">və ya</string>
+    <string name="LoginGoogle">Google ilə daxil ol</string>
+    <string name="RegisterButton">Qeydiyyatdan keç</string>
 </resources>
