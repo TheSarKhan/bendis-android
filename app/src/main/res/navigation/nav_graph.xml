@@ -9,7 +9,11 @@
         android:id="@+id/loginFragment"
         android:name="com.bendis.ui.view.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/actionRegister"
+            app:destination="@id/registerFragment" />
+    </fragment>
     <fragment
         android:id="@+id/registerFragment"
         android:name="com.bendis.ui.view.RegisterFragment"
