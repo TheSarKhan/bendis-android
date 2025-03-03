@@ -1,14 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.view.HomeFragment">
+    tools:context=".ui.view.HomeFragment" >
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/searchview_design"
+        app:layout_constraintEnd_toStartOf="@+id/ivEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivEmail"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/email"
+        app:layout_constraintBottom_toBottomOf="@+id/searchView"
+        app:layout_constraintEnd_toStartOf="@+id/ivNotification"
+        app:layout_constraintTop_toTopOf="@+id/searchView" />
+
+    <ImageView
+        android:id="@+id/ivNotification"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/notification"
+        app:layout_constraintBottom_toBottomOf="@+id/ivEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivEmail" />
+
+    <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="match_parent"
+                app:singleSelection="true"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipKateqoriyalar"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kateqoriyalar" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:text="Mobil Telefonlar" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipComp"
+                    android:layout_width="wrap_content"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_height="wrap_content"
+                    android:text="Komputerlər" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipHomeAndGarden"
+                    android:layout_width="wrap_content"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_height="wrap_content"
+                    android:text="Ev və bağ əşyaları" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip5"
+                    android:layout_width="wrap_content"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_height="wrap_content"
+                    android:text="Gözəllik məhsulları" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip6"
+                    android:layout_width="wrap_content"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_height="wrap_content"
+                    android:text="Aksesuarlar" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip7"
+                    android:layout_width="wrap_content"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_height="wrap_content"
+                    android:text="Hədiyyəlik məhsullar" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:text="İdman ləvazimatları" />
+            </com.google.android.material.chip.ChipGroup>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
