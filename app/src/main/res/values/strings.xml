@@ -4,6 +4,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="BendisTitle">Bendis</string>
     <string name="DaxilOl">Daxil olun</string>
+    <string name="HesabYaradin">Hesab yaradın</string>
     <string name="email">E-Mail</string>
     <string name="Password">Şifrə</string>
     <string name="ForgotPass">Şifrəmi unutdum</string>
@@ -11,5 +12,9 @@
     <string name="Or">və ya</string>
     <string name="LoginGoogle">Google ilə daxil ol</string>
     <string name="RegisterButton">Qeydiyyatdan keç</string>
+<<<<<<< HEAD
     <string name="SexsiMelumatlar">Şəxsi məlumatlar</string>
+=======
+
+>>>>>>> 53c1ed4918810bc971acc3369a3b0aaa59ee4c31
 </resources>
