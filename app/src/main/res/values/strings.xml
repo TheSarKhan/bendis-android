@@ -12,9 +12,13 @@
     <string name="Or">və ya</string>
     <string name="LoginGoogle">Google ilə daxil ol</string>
     <string name="RegisterButton">Qeydiyyatdan keç</string>
-<<<<<<< HEAD
     <string name="SexsiMelumatlar">Şəxsi məlumatlar</string>
-=======
+    <string name="Name">Ad</string>
+    <string name="Surname">Soyad</string>
+    <string name="Birth">Doğum Tarixi</string>
+    <string name="Gender">Cins</string>
+    <string name="phone">Telefon nömrəsi</string>
+    <string name="TelephoneNumber">Telefon Nömrəsi</string>
+    <string name="Save">Yadda saxla</string>
 
->>>>>>> 53c1ed4918810bc971acc3369a3b0aaa59ee4c31
 </resources>
