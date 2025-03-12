@@ -30,13 +30,13 @@
         android:label="fragment_favorite"
         tools:layout="@layout/fragment_favorite" />
     <fragment
-        android:id="@+id/basketFragment"
-        android:name="com.bendis.ui.view.BasketFragment"
-        android:label="fragment_basket"
-        tools:layout="@layout/fragment_basket" />
-    <fragment
         android:id="@+id/profileFragment"
         android:name="com.bendis.ui.view.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.bendis.ui.view.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" />
 </navigation>

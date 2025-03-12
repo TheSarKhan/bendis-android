@@ -10,7 +10,7 @@
         android:icon="@drawable/favoriteicon"
         android:title="Sevimlilər" />
     <item
-        android:id="@+id/basketFragment"
+        android:id="@+id/cartFragment"
         android:icon="@drawable/carticon"
         android:title="Səbət" />
     <item
