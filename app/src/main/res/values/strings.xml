@@ -20,5 +20,7 @@
     <string name="phone">Telefon nömrəsi</string>
     <string name="TelephoneNumber">Telefon Nömrəsi</string>
     <string name="Save">Yadda saxla</string>
+    <string name="Basket">Səbətim - 2 məhsul</string>
+    <string name="Apply">Tətbiq et</string>
 
 </resources>
