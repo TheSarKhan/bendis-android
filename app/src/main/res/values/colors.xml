@@ -8,5 +8,6 @@
     <color name="main_color">#FFC700</color>
     <color name="text_color">#2C2C2C</color>
     <color name="text_hint_color">#888888</color>
-
+    <color name="green">#14C776</color>
+    <color name="blue">#00B4E0</color>
 </resources>

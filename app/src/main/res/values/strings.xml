@@ -22,5 +22,24 @@
     <string name="Save">Yadda saxla</string>
     <string name="Basket">Səbətim - 2 məhsul</string>
     <string name="Apply">Tətbiq et</string>
+    <string name="ChangePassword">Şifrənin yenilənməsi</string>
+    <string name="ChangeEmail">E-mail yenilənməsi</string>
+    <string name="CurrentPassword">Cari şifrə</string>
+    <string name="NewPassword">Yeni şifrə</string>
+    <string name="AgainNewPassword">Yeni şifrə (təkrar)</string>
+    <string name="Update">Yenilə</string>
+    <string name="CurrentEmail">Mövcud e-mail</string>
+    <string name="NewEmail">Yeni E-Mail</string>
+    <string name="AgainNewEmail">Yeni E-Mail (təkrar)</string>
+    <string name="OrderNumber">Sifariş № </string>
+    <string name="Number">1234567890</string>
+    <string name="OrderDate">4 yanvar 2025, 15:26</string>
+    <string name="Seller">Satıcı:</string>
+    <string name="SellerName">Shop</string>
+    <string name="MoreAboutTheOrder">Sifariş haqqında daha ətraflı</string>
+    <string name="TotalPayment">Toplam ödəniş</string>
+    <string name="MyOrders">Mənim sifarişlərim</string>
+    <string name="Payment">538.67 ₼</string>
+    <string name="Delivered">Çatdırıldı</string>
 
 </resources>
