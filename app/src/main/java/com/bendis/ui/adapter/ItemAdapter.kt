@@ -1,5 +1,6 @@
 package com.bendis.ui.adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -18,6 +19,7 @@ class ItemAdapter(private val itemsList : List<Items>) : RecyclerView.Adapter<It
 
     override fun getItemCount(): Int = itemsList.size
 
+    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: ItemsHolder, position: Int) {
 
         val item = itemsList[position]

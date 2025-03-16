@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.Navigation
+import androidx.navigation.Navigation.findNavController
 import com.bendis.R
 import com.bendis.databinding.FragmentLoginBinding
 
@@ -15,7 +15,7 @@ class LoginFragment : Fragment() {
         binding = FragmentLoginBinding.inflate(inflater,container,false)
 
         binding.btnRegister.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.actionRegister)
+            findNavController(it).navigate(R.id.actionRegister)
         }
         return binding.root
     }

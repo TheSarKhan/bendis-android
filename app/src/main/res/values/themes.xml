@@ -1,9 +1,17 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Bendis" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowTranslucentStatus">false</item>
     </style>
 
     <style name="Theme.Bendis" parent="Base.Theme.Bendis" />
+
+    <style name="NavBar" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:background">@color/white</item>
+        <item name="itemIconTint">@color/main_color</item>
+        <item name="itemTextColor">@color/main_color</item>
+        <item name="labelVisibilityMode">labeled</item>
+    </style>
 </resources>
