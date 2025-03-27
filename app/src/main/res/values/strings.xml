@@ -41,5 +41,33 @@
     <string name="MyOrders">Mənim sifarişlərim</string>
     <string name="Payment">538.67 ₼</string>
     <string name="Delivered">Çatdırıldı</string>
+    <string name="GenderText2">Cinsiyyət</string>
+    <string name="Woman">Qadın</string>
+    <string name="Man">Kişi</string>
+    <string name="Profile">Profil</string>
+    <string name="UploadImage">Şəkil yüklə</string>
+    <string name="ChangePassword2">Şifrəni dəyişdir</string>
+    <string name="ChangeEmail2">E-mail dəyişdir</string>
+    <string name="MyAccount">Hesabım</string>
+    <string name="DefaultUser">Selcan Yusifova</string>
+    <string name="Operation">Əməliyyat</string>
+    <string name="MyComment">Rəylərim</string>
+    <string name="Messages">Mesajlar</string>
+    <string name="OpenMagazine">Mağazanı aç</string>
+    <string name="DeliveryAddrress">Çatdırılma ünvanları</string>
+    <string name="AboutUs">Haqqımızda</string>
+    <string name="Settings">Parametrlər</string>
+    <string name="City">Şəhər</string>
+    <string name="Baku">Bakı</string>
+    <string name="Language">Dil</string>
+    <string name="Azerbaijan">Azərbaycan</string>
+    <string name="Help">Kömək</string>
+    <string name="HelpAndSupport">Yardım və dəstək</string>
+    <string name="Questions">Ən çox verilən suallar</string>
+    <string name="Exit">Çıxış</string>
+    <string name="DeleteAccount">Hesabı sil</string>
+
+
+
 
 </resources>
