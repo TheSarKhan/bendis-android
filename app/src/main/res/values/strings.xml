@@ -70,5 +70,10 @@
     <string name="MyAddressText2">Mənim ünvanlarım</string>
     <string name="MyAddressText3">Hələ ünvan əlavə etməmisiniz. Çatdırılma ünvanınızı əlavə edərək alış-verişinizi sürətləndirin!</string>
     <string name="AddAddress">Ünvan əlavə et</string>
-
+    <string name="Region">Rayon</string>
+    <string name="ChooseTheAddress">Xəritədə ünvanı seç</string>
+    <string name="blockApartment">Blok/Mənzil</string>
+    <string name="infoContact">Əlaqə məlumatları</string>
+    <string name="defaultPhone">(+994) ** *** ** **</string>
+    <string name="address">Ünvan</string>
 </resources>

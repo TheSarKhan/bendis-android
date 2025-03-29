@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.view.AddNewAddressFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAddress2"
+        android:layout_width="match_parent"
+        android:elevation="10dp"
+        android:outlineSpotShadowColor="@color/text_hint_color"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/back"
+                android:id="@+id/myAddressTv"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/MyAddress"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/poppins"
+                android:textSize="18sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/myAddressTv" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/cityRegionCardView"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbarAddress2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:id="@+id/addressLayout"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp" >
+
+            <LinearLayout
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+                android:id="@+id/cityRegionSpinnerLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:endIconMode="dropdown_menu"
+                app:boxStrokeColor="@color/text_hint_color"
+                app:boxBackgroundMode="outline">
+
+                <AutoCompleteTextView
+                    android:id="@+id/spinnerCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/City"
+                    android:inputType="none"
+                    android:fontFamily="@font/poppins"
+                    android:focusable="false"
+                    android:padding="12dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                app:endIconMode="dropdown_menu"
+                app:boxStrokeColor="@color/text_hint_color"
+                app:boxBackgroundMode="outline">
+
+                <AutoCompleteTextView
+                    android:id="@+id/spinnerDistrict"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Region"
+                    android:inputType="none"
+                    android:fontFamily="@font/poppins"
+                    android:focusable="false"
+                    android:padding="12dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/address"
+                android:id="@+id/addressEt"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/cityRegionSpinnerLayout"
+                app:boxStrokeColor="@color/text_hint_color"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeWidth="1dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_hint_color"
+                android:background="@null"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+            <ImageView
+                android:id="@+id/locationIconIv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:src="@drawable/location_icon_blue"
+                app:layout_constraintTop_toBottomOf="@id/addressEt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/text_hint_color"
+                android:layout_height="wrap_content"
+                android:text="@string/ChooseTheAddress"
+                app:layout_constraintStart_toEndOf="@id/locationIconIv"
+                app:layout_constraintTop_toTopOf="@id/locationIconIv"
+                app:layout_constraintBottom_toBottomOf="@id/locationIconIv"
+                android:layout_marginStart="10dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contactInfoCardview1"
+        app:layout_constraintTop_toBottomOf="@id/cityRegionCardView"
+        android:layout_marginTop="10dp" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/infoContact"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppins"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contactEtCardview"
+        app:layout_constraintTop_toBottomOf="@id/contactInfoCardview1"
+        android:layout_marginTop="1dp" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp">
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/userIconIv"
+                android:src="@drawable/user"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nameEt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/Name"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/text_hint_color"
+                app:boxStrokeWidth="1dp"
+                app:layout_constraintBottom_toBottomOf="@id/userIconIv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/userIconIv"
+                app:layout_constraintTop_toTopOf="@id/userIconIv">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/poppins"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/surnameEt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/Surname"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/text_hint_color"
+                app:boxStrokeWidth="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/userIconIv"
+                app:layout_constraintTop_toBottomOf="@id/nameEt">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etSurname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/poppins"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:id="@+id/phoneIconIv"
+                android:layout_height="30dp"
+                android:src="@drawable/phone_icon_yellow"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/surnameEt" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phoneEt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/defaultPhone"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/text_hint_color"
+                app:boxStrokeWidth="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/phoneIconIv"
+                app:layout_constraintTop_toBottomOf="@id/surnameEt">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/poppins"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveAddressBtn"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cornerRadius="6dp"
+        app:layout_constraintTop_toBottomOf="@id/contactEtCardview"
+        android:text="@string/Save"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/main_color" />
+</androidx.constraintlayout.widget.ConstraintLayout>
