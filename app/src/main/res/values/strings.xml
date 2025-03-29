@@ -66,8 +66,9 @@
     <string name="Questions">Ən çox verilən suallar</string>
     <string name="Exit">Çıxış</string>
     <string name="DeleteAccount">Hesabı sil</string>
-
-
-
+    <string name="MyAddress">Ünvanlarım</string>
+    <string name="MyAddressText2">Mənim ünvanlarım</string>
+    <string name="MyAddressText3">Hələ ünvan əlavə etməmisiniz. Çatdırılma ünvanınızı əlavə edərək alış-verişinizi sürətləndirin!</string>
+    <string name="AddAddress">Ünvan əlavə et</string>
 
 </resources>
