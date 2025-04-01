@@ -45,7 +45,7 @@
                     android:textSize="18sp"
                     android:fontFamily="@font/poppins"
                     android:textColor="@color/black"
-                    android:layout_marginStart="17dp"
+                    android:layout_marginStart="20dp"
                     app:layout_constraintStart_toEndOf="@id/BackImgButton"
                     app:layout_constraintTop_toTopOf="@id/BackImgButton"
                     app:layout_constraintBottom_toBottomOf="@id/BackImgButton" />
