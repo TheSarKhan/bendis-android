@@ -38,5 +38,23 @@
         android:id="@+id/cartFragment"
         android:name="com.bendis.ui.view.CartFragment"
         android:label="fragment_cart"
-        tools:layout="@layout/fragment_cart" />
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_cartFragment_to_paymentDetailFragment"
+            app:destination="@id/paymentDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentDetailFragment"
+        android:name="com.bendis.ui.view.PaymentDetailFragment"
+        android:label="fragment_payment_detail"
+        tools:layout="@layout/fragment_payment_detail" >
+        <action
+            android:id="@+id/action_paymentDetailFragment_to_confirmPinFragment"
+            app:destination="@id/confirmPinFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmPinFragment"
+        android:name="com.bendis.ui.view.ConfirmPinFragment"
+        android:label="fragment_confirm_pin"
+        tools:layout="@layout/fragment_confirm_pin" />
 </navigation>

@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".ui.view.PaymentDetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/totalPriceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="9dp"
+            android:fontFamily="@font/poppins"
+            android:text="Cəmi"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/totalPrice"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/totalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:fontFamily="@font/poppins"
+            android:text="549.00 ₼"
+            android:textColor="@color/main_color"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/totalPriceText"
+            app:layout_constraintTop_toBottomOf="@+id/totalPriceText" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/icon_collapse"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/finishTheProcess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="Təsdiq et və bitir"
+            app:backgroundTint="@color/main_color"
+            app:cornerRadius="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Güvənli ödəniş"
+        app:layout_constraintBottom_toBottomOf="@+id/backButton"
+        app:layout_constraintStart_toEndOf="@+id/backButton"
+        app:layout_constraintTop_toTopOf="@+id/backButton" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/deliveryAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Çatdırılma ünvanı"
+                        android:textColor="@color/black"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/addAddressButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:text="Əlavə et"
+                        android:textColor="#00B5E2"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/deliveryAddress"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/deliveryAddress" />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="16dp"
+                        android:background="#DBDBDB"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/deliveryAddress" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="16dp"
+                        app:buttonTint="#00B5E2"
+                        android:checked="true"
+                        android:layout_marginBottom="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+                    <TextView
+                        android:id="@+id/deliveryAddressText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-10dp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@drawable/plain_text_background"
+                        android:paddingStart="10dp"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:text="İnşaatçılar prospekti, Bakı"
+                        android:textColor="#7A7A7A"
+                        app:layout_constraintBottom_toBottomOf="@+id/radioButton"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/radioButton"
+                        app:layout_constraintTop_toTopOf="@+id/radioButton" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView4">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:id="@+id/view4"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="16dp"
+                        android:background="#DBDBDB"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/paymentMethod" />
+
+                    <TextView
+                        android:id="@+id/paymentMethod"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Ödəniş seçimləri"
+                        android:textColor="@color/black"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view4">
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:checked="true"
+                            android:text="Kartla ödəniş"
+                            app:buttonTint="#00B5E2"
+                            app:useMaterialThemeColors="false" />
+
+                        <View
+                            android:id="@+id/view5"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="#DBDBDB" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:text="Nağd ödəniş (qapıda)"
+                            app:buttonTint="#00B5E2" />
+
+                        <View
+                            android:id="@+id/view6"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:background="#DBDBDB" />
+                    </RadioGroup>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView5">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:id="@+id/view7"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="16dp"
+                        android:background="#DBDBDB"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Kart məlumatları"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/cardNumberET"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@drawable/plain_text_background"
+                        android:ems="10"
+                        android:hint="Kart nömrəsi"
+                        android:inputType="number"
+                        android:maxLength="16"
+                        android:paddingStart="10dp"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Son istifadə tarixi"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="@+id/cardNumberET"
+                        app:layout_constraintTop_toBottomOf="@+id/cardNumberET" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/plain_text_background"
+                        android:paddingStart="8dp"
+                        android:paddingTop="14dp"
+                        android:paddingBottom="14dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+                    <Spinner
+                        android:id="@+id/spinner2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/plain_text_background"
+                        android:paddingStart="8dp"
+                        android:paddingTop="14dp"
+                        android:paddingBottom="14dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/spinner"
+                        app:layout_constraintStart_toEndOf="@+id/spinner"
+                        app:layout_constraintTop_toTopOf="@+id/spinner" />
+
+                    <EditText
+                        android:id="@+id/cvvET"
+                        android:layout_width="72dp"
+                        android:layout_height="42dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@drawable/plain_text_background"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textAlignment="center"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toEndOf="@+id/spinner2"
+                        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="CVV"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="@+id/cvvET"
+                        app:layout_constraintTop_toBottomOf="@+id/cardNumberET" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/checkBox2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="3D Secure ilə ödəmək istəyirəm"
+                        app:buttonIconTint="@color/white"
+                        app:buttonTint="#00B5E2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/spinner"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:useMaterialThemeColors="false" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

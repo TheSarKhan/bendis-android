@@ -21,7 +21,7 @@ class ProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val birthdayLayout = view.findViewById<TextInputLayout>(R.id.textInputLayout3)
+        val birthdayLayout = view.findViewById<TextInputLayout>(R.id.BirthDateTIL)
 
         birthdayLayout.endIconDrawable = ContextCompat.getDrawable(requireContext(), R.drawable.arrow)
 

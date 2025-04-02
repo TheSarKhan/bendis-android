@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bendis.R
@@ -30,9 +31,15 @@ class CartFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         testWithStaticData()
-
+        navigate()
         setAdapter()
 
+    }
+
+    private fun navigate() {
+        binding.navigateToPaymentDetail.setOnClickListener {
+            findNavController().navigate(R.id.action_cartFragment_to_paymentDetailFragment)
+        }
     }
 
     private fun testWithStaticData() {
